@@ -64,15 +64,94 @@ body {
     }
 
 .row.text-center {
-    display: flex; /* Garante que os itens fiquem na mesma linha */
-    justify-content: center; /* Centraliza os itens horizontalmente */
+    display: flex;
+    justify-content: center;
 }
 
 .vertical-bar {
-    border-left: 1px solid #000; /* Barra preta */
+    border-left: 1px solid #000;
     height: 30px;
-    margin: 0 20px; /* Espaçamento entre os itens */
+    margin: 0 20px;
 }
+
+.container-card {
+    background-color: blue;
+    padding: 10px;
+    display: flex;
+    flex-grow: 1;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    padding: 16px;
+    width: 300px;
+    border-radius: 5px;
+}
+
+    .card img {
+        max-width: 100%;
+        border-radius: 5px;
+    }
+
+    .card h2, .card p {
+        margin: 8px 0;
+    }
+
+    .card p {
+        margin-bottom: 16px; /* Espaço entre o preço e o botão */
+    }
+
+.btn-card {
+    border: 2px solid #507A8A;
+    border-radius: 5px;
+    font-size: 20px;
+    color: #507A8A;
+    padding: 10px 20px;
+    background-color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-top: 16px; /* Espaçamento entre o preço e o botão */
+}
+
+    .btn-card:hover {
+        background-color: #507A84;
+        color: white;
+        text-decoration: none;
+    }
+
+
+
+
+.card img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.card h2, .card p {
+    margin: 8px 0;
+}
+
+.card p {
+    margin-bottom: 16px; /* Espaço entre o preço e o botão */
+}
+
+.btn-card {
+    border: 2px solid #507A8A;
+    font-size: 20px;
+    color: #507A8A;
+    padding: 10px 20px;
+    background-color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-top: 16px; /* Espaçamento entre o preço e o botão */
+}
+
+
 
 
 
