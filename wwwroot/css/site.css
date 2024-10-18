@@ -42,7 +42,7 @@ body {
 }
 
 .carrossel {
-    width: 80%;
+    width: 85%;
     margin: 35px auto; /* Auto centraliza horizontalmente */
 }
 
@@ -161,6 +161,25 @@ body {
     margin-top: 0;
 }
 
+/******* ÁREA DO ADMIN ********/
+
+.btn-admin {
+    border: 2px solid #507A8A;
+    border-radius: 5px;
+    font-size: 20px;
+    color: #507A8A;
+    padding: 10px 20px;
+    background-color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin: 20px
+}
+
+.btn-admin:hover {
+    background-color: #507A84;
+    color: white;
+    text-decoration: none;
+}
 
 
 
