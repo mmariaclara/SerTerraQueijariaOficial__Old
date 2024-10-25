@@ -292,3 +292,5 @@ C:\Projeto\SerTerraQueijariaOficial\obj\Debug\net8.0\refint\SerTerraQueijaria.dl
 C:\Projeto\SerTerraQueijariaOficial\obj\Debug\net8.0\SerTerraQueijaria.pdb
 C:\Projeto\SerTerraQueijariaOficial\obj\Debug\net8.0\SerTerraQueijaria.genruntimeconfig.cache
 C:\Projeto\SerTerraQueijariaOficial\obj\Debug\net8.0\ref\SerTerraQueijaria.dll
+C:\Projeto\SerTerraQueijariaOficial\bin\Debug\net8.0\BootstrapIcons.AspNetCore.dll
+C:\Projeto\SerTerraQueijariaOficial\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout-Admin.cshtml.rz.scp.css

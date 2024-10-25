@@ -69,7 +69,7 @@ namespace SerTerraQueijaria.Migrations
                     b.Property<int>("QtdEstoque")
                         .HasColumnType("int");
 
-                    b.Property<Guid?>("TipoProdTiposProdutosId")
+                    b.Property<Guid>("TipoProdTiposProdutosId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<Guid>("TipoProdutoId")
@@ -101,7 +101,9 @@ namespace SerTerraQueijaria.Migrations
                 {
                     b.HasOne("SerTerraQueijaria.Models.TiposProdutos", "TipoProd")
                         .WithMany()
-                        .HasForeignKey("TipoProdTiposProdutosId");
+                        .HasForeignKey("TipoProdTiposProdutosId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("TipoProd");
                 });

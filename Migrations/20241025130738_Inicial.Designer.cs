@@ -12,7 +12,7 @@ using SerTerraQueijaria.Data;
 namespace SerTerraQueijaria.Migrations
 {
     [DbContext(typeof(SerTerraContext))]
-    [Migration("20241018165255_Inicial")]
+    [Migration("20241025130738_Inicial")]
     partial class Inicial
     {
         /// <inheritdoc />
@@ -52,6 +52,39 @@ namespace SerTerraQueijaria.Migrations
                     b.ToTable("tbClientes", (string)null);
                 });
 
+            modelBuilder.Entity("SerTerraQueijaria.Models.Produto", b =>
+                {
+                    b.Property<Guid>("ProdutoId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Descricao")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("NomeProduto")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("PrecoUnitario")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<int>("QtdEstoque")
+                        .HasColumnType("int");
+
+                    b.Property<Guid>("TipoProdTiposProdutosId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("TipoProdutoId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("ProdutoId");
+
+                    b.HasIndex("TipoProdTiposProdutosId");
+
+                    b.ToTable("tbProdutos", (string)null);
+                });
+
             modelBuilder.Entity("SerTerraQueijaria.Models.TiposProdutos", b =>
                 {
                     b.Property<Guid>("TiposProdutosId")
@@ -65,6 +98,17 @@ namespace SerTerraQueijaria.Migrations
                     b.HasKey("TiposProdutosId");
 
                     b.ToTable("tbTiposProdutos", (string)null);
+                });
+
+            modelBuilder.Entity("SerTerraQueijaria.Models.Produto", b =>
+                {
+                    b.HasOne("SerTerraQueijaria.Models.TiposProdutos", "TipoProd")
+                        .WithMany()
+                        .HasForeignKey("TipoProdTiposProdutosId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("TipoProd");
                 });
 #pragma warning restore 612, 618
         }

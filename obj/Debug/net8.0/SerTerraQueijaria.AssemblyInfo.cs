@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SerTerraQueijaria")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+efd384b0f3a0d6a480aa48d54a139a472bea0a4a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cfe322a6a7cb2c04f816ba582f95c9fdd3f9b9dd")]
 [assembly: System.Reflection.AssemblyProductAttribute("SerTerraQueijaria")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SerTerraQueijaria")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
